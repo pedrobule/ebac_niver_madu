@@ -18,12 +18,12 @@
         height: 100%;
         background-color: #000;
         content: '';
-        opacity: 0.5;
+        opacity: 0.3;
     }
 
     &__text {
         margin-top: 64px;
-        margin-bottom: 64px;
+        margin-bottom: 190px;
         font-size: 40px;
         line-height: 56px;
         font-weight: 800;
@@ -37,7 +37,8 @@
     }
 
     @media (max-width: 640px) {
-        padding: 40px 0;
+        padding: 20px 0;
+
         &__logo {
             height: 80px;
         }
