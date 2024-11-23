@@ -2,20 +2,27 @@
 @use 'components/infos_bar';
 @use 'components/buttons';
 @use 'event';
+@use 'variaveis';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    color: #fff;
+    color: variaveis.$textColor;
     list-style: none;
+    
+}
+
+header {
+    background-color: variaveis.$pink2;
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    
 
     @media (max-width: 640px) {
         max-width: 80%;

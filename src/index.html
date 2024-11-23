@@ -6,15 +6,16 @@
     <title>Aniversário da Madu</title>
     <link rel="stylesheet" href="styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/logo_madu.png" alt="logo da madu 3">
             <p class="hero__text">
-                A Maria Eduarda faz 3 anos em 75d 12h 20m 15s
+                A Maria Eduarda faz 3 anos em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -36,8 +37,8 @@
         </div>
     </header>
 
-    <section class="event">
-        <div class="container">
+    <section class="event event--nascimento">
+        <div class="container" data-aos="fade-right">
             <div class="event__details">
                 <h2 class="event__details__title">Nascimento</h2>
                 <p class="event__details_description">
@@ -47,6 +48,64 @@
             <img class="event__image" src="./images/madu_rescem.jpeg" alt="Madu nenem">
         </div>
     </section>
+    <section class="event event--crescimento event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Crescimento</h2>
+                <p class="event__details_description">
+                    Ela foi crescendo em meio a muito amor. Junto do vovo Bolão, da vovó Geni, da tia Bia e do papai e da mãe. Contando muitas histórinhas, brincando de princesa e aprendendo cada vez mais, como uma esponja que absorve tudo que toca.
+                </p>
+            </div>
+            <img class="event__image" src="./images/nos.jpeg" alt="Familia Nuclear">
+        </div>
+    </section>
+    <section class="event event--cavalcante">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Família Cavalcante</h2>
+                <p class="event__details_description">
+                    Mas a família é grande, não se resumi ao núcleo. Da parte do papai, vem a família Cavalcante, como base a vovó Maria. Com muitos tios e tias e primos e tudo mais.
+            </div>
+            <img class="event__image" src="./images/familia_cavalcante.jpeg" alt="Familia Cavalcante">
+        </div>
+    </section>
+
+    <section class="event event--santos event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Familia Santos</h2>
+                <p class="event__details_description">
+                    Do lado da mamãe, temos a família Santos, com muita alegria, proteção e companherismo. Sempre seguindo os ensinamentos da bisa Vilma.
+                </p>
+            </div>
+            <img class="event__image" src="./images/familia santos.jpeg" alt="Familia Santos">
+        </div>
+    </section>
+
+    <section class="event event--santos2">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Familia Santos</h2>
+                <p class="event__details_description">
+                    E a dona Dete que centraliza todos os encontros do lado da vovó Geni.
+                </p>
+            </div>
+            <img class="event__image" src="./images/santos2.jpeg" alt="Familia Santos">
+        </div>
+    </section>
+
+    <section class="event event--violeta event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">A Convidada de gala</h2>
+                <p class="event__details_description">
+                    Mas antes disso teremos uma convidada especial, a Violeta tá vindo aí, para alegrar ainda mais as nossas vidas e participar do terceior aniversário da irmãzinha!
+                </p>
+            </div>
+            <img class="event__image" src="./images/hero.jpeg" alt="Familia reunida">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
